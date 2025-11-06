@@ -1,0 +1,17 @@
+Learning Objectives
+
+After this module, you will be able to:
+
+    Identify fundamental design security principles 
+    Use the adversarial model to enhance security policy and practices 
+    Identify and mitigate malware and operating system-specific vulnerabilities 
+    Explore the defense in depth model and how it is implemented in production systems 
+    Identify security challenges about data at rest and in flight 
+    Manage access control lists 
+    Interpret log files 
+    Operate a security and information event management system (SIEM) 
+    Write rulesets for basic firewall management 
+    Define endpoint and mobile device security perimeters 
+    Perform an overview of operating system hardening 
+    Identify enterprise policy and backup management 
+    Identify key exposures in virtualization technology 

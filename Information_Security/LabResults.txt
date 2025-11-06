@@ -1,0 +1,39 @@
+
+
+Test1234567890
+
+wrong password
+
+./buffovf 
+
+ Enter the password : 
+Test123456789012
+
+ Wrong Password 
+
+ Root privileges given to the user (if this were a real system) 
+Exercise 3: Devise a way to find out how long the buffer is before it starts to overflow. Answer
+the following questions:
+1. How long of an input sequence was needed for overflow to take place?
+16 Characters
+
+2. How did you figure out the required length before overflow?
+under 12 seconds
+
+3. What was the effect of the overflowed input field?
+root privileges given to the user
+
+
+
+
+Exercise 4: Discussion
+1. What were the likely culprits in the buffer overflow?
+   No validation of input length or denial response.
+
+2. How should you design around these issues to make programs less susceptible to these
+failures?
+   Add validation of inputs, if prompting for a Password.
+
+3. Describe a policy that you can put in place for software development to mitigate the
+possibility of such issues making it into the final program code.
+   Confirm validations for inputs is correct, and test them.
