@@ -1,0 +1,3 @@
+https://www.sqlshack.com/an-overview-of-the-column-level-sql-server-encryption/
+
+
