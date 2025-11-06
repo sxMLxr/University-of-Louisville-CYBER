@@ -1,0 +1,64 @@
+
+
+
+The unreasonable effectiveness of RNN
+
+http://karpathy.github.io/2015/05/21/rnn-effectiveness/
+
+
+
+A review of RNN develop paper
+https://developpaper.com/a-review-of-rnn-cyclic-neural-network/
+
+
+
+Problems with Naive RNN
+
+When dealing with a time series, it tends to forget old information. When there is a distant relationship of unknown length, we wish to have a “memory” to it. There is also a vanishing gradient problem.
+
+The vanishing gradient problem is encountered when training artificial neural networks(opens in a new tab) 
+https://en.wikipedia.org/wiki/Artificial_neural_network
+
+with gradient-based learning methods(opens in a new tab) 
+https://en.wikipedia.org/wiki/Stochastic_gradient_descent
+ 
+ and backpropagation(opens in a new tab)
+ https://en.wikipedia.org/wiki/Backpropagation
+ 
+ . In such methods, each of the neural network's weights receives an update proportional to the partial derivative(opens in a new tab)
+ https://en.wikipedia.org/wiki/Partial_derivative
+ 
+  of the error function with respect to the current weight in each iteration of training. The problem is that in some cases, the gradient will be vanishingly small, effectively preventing the weight from changing its value. 
+
+Information taken from: https://en.wikipedia.org/wiki/Vanishing_gradient_problem(opens in a new tab)
+https://en.wikipedia.org/wiki/Vanishing_gradient_problem
+
+
+
+
+4 POINTS of RNN ISSUES
+
+
+====Point One
+
+    What happens to the magnitude of the gradients as we backpropagate through many layers?
+        If the weights are small, the gradients shrink exponentially.
+        If the weights are big the gradients grow exponentially.
+    
+====Point Two
+
+    Typical feed-forward neural nets can cope with these exponential effects because they only have a few hidden layers.
+    
+
+    
+====Point Three
+
+    In an RNN trained on long sequences (e.g. 100 time steps) the gradients can easily explode or vanish.
+        We can avoid this by initializing the weights very carefully.
+
+
+
+====Point Four
+
+    Even with good initial weights, its very hard to detect that the current target output depends on an input from many time-steps ago.
+        So RNNs have difficulty dealing with long-range dependencies.

@@ -1,0 +1,12 @@
+read.csv(file, header = TRUE, sep = ",", quote = "\"",
+             dec = ".", fill = TRUE, comment.char = "", ...)
+
+# Example ␋   > ratings <- read.csv("ratings2.txt")
+   > View(ratings)
+   
+   > class(ratings)
+   [1] "data.frame" ␋   > colnames(ratings) # or names(ratings)
+   [1] "customer" "movie" "rating" "date"␋   > class(ratings$customer)
+   [1] "integer"␋   > class(ratings$date)
+   [1] "factor" ␋   > class(ratings[,4])
+   [1] "factor" 

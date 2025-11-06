@@ -1,0 +1,143 @@
+
+
+
+Naive Bayes Classifier
+Naive Bayes Classifier
+Naive Bayes Classifier
+Naive Bayes Classifier
+
+
+Machine Learning – Naive Bayes Classifier
+
+https://computersciencesource.wordpress.com/2010/01/28/year-2-machine-learning-naive-bayes-classifier/
+
+
+
+Introduction to Naive Bayes in Cybersecurity
+
+https://billatnapier.medium.com/introduction-to-na%C3%AFve-bayes-in-cybersecurity-9fb19f849f80
+
+
+
+A gentle introduction to Bayes Theorem for Machine Learning
+
+https://machinelearningmastery.com/bayes-theorem-for-machine-learning/
+
+
+
+Naive Bayes Classifier From Scratch in Python
+
+https://machinelearningmastery.com/naive-bayes-classifier-scratch-python/
+
+
+
+Naive Bayes Classifier Fun and Easy Machine Learning
+
+https://www.youtube.com/watch?v=CPqOCI0ahss&ab_channel=AugmentedAI
+
+
+
+How  Naive Bayes Classifier works1/2 understand Naive Bayes and example
+
+https://youtu.be/XcwH9JGfZOU
+
+
+
+NaiveBayes Example
+
+https://youtu.be/ZAfarappAO0
+
+
+Naive Bayes Classifier
+Naive Bayes Classifier
+Naive Bayes Classifier
+Naive Bayes Classifier
+
+
+
+
+
+Decision Trees
+Decision Trees
+Decision Trees
+Decision Trees
+
+None at the moment.
+
+Decision Trees
+Decision Trees
+Decision Trees
+Decision Trees
+
+
+
+
+Ensemble Learning Models
+Ensemble Learning Models
+Ensemble Learning Models
+ 
+Visit the link below for another excellent summary from Stephen Marsland's Machine Learning: An Algorithmic Perspective(opens in a new tab), this time on Ensemble Learning. 
+ 
+https://homepages.ecs.vuw.ac.nz/~marslast/MLbook.html   **** 
+
+Ensemble Learning Models
+Ensemble Learning Models
+Ensemble Learning Models
+
+
+
+
+
+Boosting
+Boosting
+Boosting
+
+ https://towardsdatascience.com/?s=Boosting
+ 
+ https://towardsdatascience.com/a-powerful-feature-for-boosting-python-code-efficiency-and-streamlining-complex-workflows-f6bfafd87336/
+
+Boosting
+Boosting
+Boosting
+
+
+
+Neural Networks
+Neural Networks
+Neural Networks
+
+https://rolisz.ro/2013/neural-networks-in-python/
+
+https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/
+
+https://dennybritz.com/posts/wildml/implementing-a-neural-network-from-scratch/
+
+
+Neural Networks
+Neural Networks
+Neural Networks
+
+
+
+inference vs prediction
+inference vs prediction
+inference vs prediction
+
+https://www.datasciencecentral.com/inference-vs-prediction-in-one-picture/
+
+inference vs prediction
+inference vs prediction
+inference vs prediction
+
+
+
+    •  Deep Learning In 5 Minutes | What Is Deep Learning? | Deep Learning Explained Simply | Simplilearn – YouTube
+    • CS 230 - Convolutional Neural Networks Cheatsheet (stanford.edu)
+    • http://education.sdsc.edu/training/201910_intro_to_deep_learning/recording/
+    •  But what is a Neural Network? | Deep learning, chapter 1 - YouTube
+    • Gradient descent, how neural networks learn | Deep learning, chapter 2 - YouTube
+    •  What is backpropagation really doing? | Deep learning, chapter 3 - YouTube
+    • Backpropagation calculus | Deep learning, chapter 4 - YouTube
+    
+    
+

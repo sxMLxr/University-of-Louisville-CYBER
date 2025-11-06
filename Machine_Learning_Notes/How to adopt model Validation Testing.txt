@@ -1,0 +1,217 @@
+How to Adopt Model Validation Testing?
+
+Click the plus sign to see the description of each method of testing. More details will follow later in this module.
+
+
+RESUBSTITION 
+
+Using all the data for training the model, the validity of the model evaluated by comparing the output value with an actual value which belongs to the same training dataset. The error, in this case, is known as the Resubstitution error and the technique is known as the Resubstitution Validation technique.
+
+
+
+
+HOLD OUT
+
+For avoiding the above-stated resubstitution error. The best way is to divide the dataset into training and test dataset. The ratio can be 80/20, 70/30 or 60/40. This method creates an edge off to the likelihood in the contrast of the uneven distribution of different classes. To cope up this situation, the dataset divided into equal instances of classes in both the datasets.
+ 	==== further explaination
+ 	Holding Out Data
+
+	The holdout method reserves a certain amount for testing and uses the remainder for training. Usually this is one-third for testing, the rest for training. 
+
+	For “unbalanced” datasets, random samples might not be representative. There may be few or no instances of some classes.
+
+	A stratified sample makes sure that each class is represented with approximately equal proportions in both subsets.  
+
+
+==== Examples Repeated hold out = Cross validation
+Cross-Validation
+
+The the most popular and effective type of repeated holdout is cross-validation. 
+
+Cross-validation avoids overlapping test sets 
+
+    First step: data is split into k subsets of equal size 
+    Second step: each subset in turn is used for testing and the remainder for training 
+
+This is called k-fold cross-validation. Often the subsets are stratified before the cross-validation is performed.
+
+Cross-Validation Example
+
+The standard data-mining method for evaluation is a stratified ten-fold cross-validation. Why ten? Extensive experiments have shown that this is the best choice to get an accurate estimate. The stratification reduces the estimate's variance.
+
+Even better is a repeated stratified cross-validation. For example, the ten-fold cross-validation is repeated ten times and the results are averaged. This reduces the sampling variance.
+
+The error estimate is the mean across all repetitions.
+
+=============== end hold out
+
+
+
+
+
+
+KFOLD CROSS-VALIDATION
+
+Dataset is divided into K number of subsets where K-1 subsets for training and the rest one subset for testing the model. This method provides an advantage that the model checker for the validation K times.
+
+
+Bootstrapping
+
+This is the continuous replacement technique in which the dataset for training selected randomly and the instances of the dataset which are not selected are used as a testing dataset. The main difference between this technique and K-fold cross-validation is the value of fold which is likely to change every time.
+
+
+LOOCV
+
+In this method, only one record used for testing and the rest of other records are used training. The entire data used for training and testing.
+Leave-One-Out Cross-Validation (LOOCV)
+========
+Leave-One-Out is a particular form of cross-validation. There is a set number of folds to number of training instances (i.e., for n training instances, build classifier n times). 
+
+It makes best use of the data, and involves no random subsampling. It's computationally expensive, but has good performance.
+
+Instead of creating two subsets of comparable size, a single observation is used for the validation set and the remaining observations (n – 1) make up the training set.
+
+LOOCV Algorithm
+
+    Split the entire data set of size n into:
+        Blue = training data set
+        Beige = validation data set
+    Fit the model using the training data set
+    Evaluate the model using validation set and compute the corresponding MSE.
+    Repeat this process n times, producing n squared errors. The average of these n squared errors estimates the test MSE.
+
+
+CV(subscript n) = (1/n*(sum(MSE)) for i=1 to n
+
+  ************
+  *** NOTE:  LOOCV is a special case of K-FOLD, where K=n
+  ************
+
+ =====Additona Example
+ 
+Three-way Data Splits
+
+One problem with CV is since data is being used jointly to fit model and estimate error, the error could be biased downward. 
+
+If the goal is a real estimate of error (as opposed to which model is best), you may want a three way split:
+
+    Training set: examples used for learning 
+    Validation set: used to tune parameters 
+    Test set: never used in the model fitting process, used at the end for unbiased estimate of hold out error
+
+=========LOOCV
+
+
+
+
+Random SubSampling
+
+The number of subsets selected and then combined to form a super subset used for testing and the rest of the data used for training.
+
+
+Classification Matrix
+
+This matrix consists of main numbers in respect for elements which are truly positive, true negative, false positive and false negative with the help the values which calculate – Accuracy, Precision, Recall, and F1-score.
+
+
+Scatter Plot
+
+This is a graphical representation of the value predicted concerning the actual values. It calculates the accuracy of the model.
+
+
+
+
+
+
+==========Evaluation of Classification
+
+Confusion Matrix
+
+	
+
+				Actual
+	Predicted	
+			Positive	Negative
+				1	       0 
+				
+	Positive  1             a       	b			   
+	Negative  0             c		d
+	
+Accuracy = (a+d)/(a+b+c+d)
+
+
+This isn't always the best choice. You can assume 1% fraud, but the model predicts no fraud. What is the accuracy?
+				Actual
+	Predicted	
+			Positive	Negative
+			Fraud		No Fraud
+				
+	Pos     Fraud             0       	0			   
+	Neg  No Fraud             10	      990	
+
+
+
+==
+
+
+			Actual
+Predicted	
+			Positive		    Negative
+			
+			
+	Positive	These values are our        These values are our negative tests 
+			positive tests AND          BUT they have been predicted as 						
+							positive. 
+			they have been predicted    This is False Positive (FP).
+			as positive, too. This 
+			is True Positive (TP).
+	 
+	Negative	These values are our 	    These values are our negative
+			positive tests BUT they 	tests AND they have been
+			have been predicted as 		predicted as negative, too. 
+			negative. 			This is True Negative (TN).	
+			This is False Negative (FN).	 
+
+
+
+Sensitivity = True Positive / (True Positive + False Negative)
+
+Specificity = True Negative / (True Negative + False Positive)
+
+When the value of specificity is high, then it means our model is good at predicting the true negatives.
+
+Accuracy (ACC) is the ratio of all correct classification to the total number of instances in the test database.
+
+
+
+
+
+
+AREA UNDER THE CURVE 
+Area Under the Curve (AUC)
+
+"Area under the curve" (AUC) is a common measure of predictive performance.
+
+ROC curve plots sensitivity vs. (1-specificity), also known as the false positive rate.
+
+    It always goes from (0,0) to (1,1). 
+    The more area in the upper left, the better. 
+    The random model is on the diagonal.
+    
+    --- video for further explaination.
+    ROC
+    https://youtu.be/21Igj5Pr6u4
+    
+    weka tutorial 24 Comparison Model evaluation
+    https://youtu.be/WqEAD_Z6h0E
+    
+    
+    
+    
+
+
+
+
+
+
+
