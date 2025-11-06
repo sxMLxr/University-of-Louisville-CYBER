@@ -1,0 +1,67 @@
+1  Lab – Network Scanning
+1. Overview
+• The objective of this assignment is to perform a ping sweeping and port scanning.
+• This learning objective is evaluated by examining the outputs captured in screenshots after
+performing the tasks.
+
+Username: netsec Password: netsec2021!
+
+2. Background
+• Study Nmap using the following sites: http://nmap.org/
+• To learn how to scan networks and ports, go to the following sites.
+https://www.tutorialspoint.com/nmap-cheat-sheet 
+https://www.stationx.net/nmap-cheat-sheet/
+http://www.cyberciti.biz/networking/nmap-command-examples-tutorials/
+
+• To switch into a super user, type the following command: “sudo su”.
+• Password for sudo : P@55w0rd!
+• Warning: You must not scan any live servers using Nmap or send malicious packets using
+hping3. If caught, you may be indicted (not a joke!).
+
+3. Preparation
+• You will do this lab using Network Security Workspace on the CyberGym.
+
+4. Tasks
+Task 1. Identifying the IP address of Kali
+• Find the IP address and the subnet mask of Kali (use ifconfig). Report the result with a screenshot.
+
+Task 2. Ping Sweeping
+• Perform a ping sweeping attack with Nmap by sending a series of ICMP echo request
+packets to a range of IP addresses on a network.
+• Pick the network address of the Kali machine and perform ping sweeping.
+• For ping sweeping, you have to provide the “network address/CIDR notation of the subnet
+mask.” (e.g., 192.168.10.0/24). Use -sP flag for ping sweeping. It takes a while and so be
+patient.
+• In general, this is the command we use for Ping Sweeping.
+2
+o $ nmap -sP x.x.x.0/24 , where x.x.x.0 is the IP address of the network. o
+(Example) $ nmap -sP 192.168.10.0/24 , where x.x.x.0 is the IP address of the
+network.
+• Task
+1) Report your result in a screenshot like below.
+
+
+Task 3. Port Scanning
+• Port scanning is an attempt to connect to a computer’s ports to see whether any ports are
+active and listening.
+• Scan the target (scanme.nmp.org) from your Kali and capture the packets with Wireshark on
+Kali. The site scanme.nmap.org is set up by the Nmap Security Scanner Project and
+insecure.org. This site helps learners test their Nmap installation or Internet connection. You
+can legally scan this site with port scanning tools.
+• Steps:
+1) Start Wireshark on Kali after selecting the proper interface. To launch Wireshark, type
+“wireshark” on the command shell.
+2) Run the following command and wait until you get the result.
+• Task
+Answer the following questions. Provide a screenshot for each question to support your answer.
+For the answers, use the display filter “tcp.stream eq xx” (replace xx with the integer) as
+necessary.
+
+3
+1) Which type of TCP packet (e.g., SYN, SYN/ACK, or ACK) was sent from your Kali to the
+victim?  SYN
+
+
+2) Which type of TCP packet (e.g., SYN, SYN/ACK, ACK, or RST) was received from the
+victim to the Kali in response?
+ACK
