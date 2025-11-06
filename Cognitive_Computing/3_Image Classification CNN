@@ -1,0 +1,132 @@
+
+
+RNN RNN RNN
+RNN RNN RNN
+
+
+Over time object recognition in cognitive computing has developed to become faster and more accurate. Here are the various forms of the R-CNN Family.
+
+
+
+
+RNN 
+
+When using R-CNN on an image, it will identify potentially relevant content in the image. There are roughly 2,000 proposals per image. For each proposed region, use CNN to generate feature vectors. It then uses SVMs to classify each feature vector. Linear regression is used for bounding box offsets.
+
+
+
+Fast R-CNN
+
+Faster R-CNN creates region proposals that selects regions of interest in an image. It then takes each proposal and works to classify what is in that region.
+
+
+
+Faster R-CNN
+
+Faster R-CNN introduces a region proposal network (RPN) that creates region proposals and scores the objectness in each region.
+
+
+
+Mask R-CNN
+
+Mask R-CNN (2017) is gaining  significant popularity. As the name implies, Mask R-CNN is an R-CNN derivative combining the best of Feature Pyramid Pooling (FPN), Fully Convolutional Networks (FCNs), and Residual networks all together under the Faster R-CNN architecture. Furthermore, Mask R-CNN extends Faster R-CNN by adding an additional branch for predicting an object mask (i.e. pixel segmentation) in parallel with the existing branch for  bounding box recognition. Mask R-CNN achieves top marks in all three tracks of the  COCO suite of challenges, including instance segmentation,  bounding-box object detection, and person keypoint detection.
+
+For a deeper understanding of the types of R-CNN, review the link below.
+
+
+
+RNN RNN RNN
+RNN RNN RNN
+
+
+
+
+
+Deep Learning for Medical Image Segmentation
+Deep Learning for Medical Image Segmentation
+Deep Learning for Medical Image Segmentation
+
+
+
+Deep Learning for organ segmentation has become tremendously popular in the last five years. The most popular DL-based segmentation solutions are:
+
+    1    U-net: Ronneberger, Olaf; Fischer, Philipp; Brox, Thomas (2015). "U-Net:   Convolutional Networks for Biomedical Image Segmentation".
+   
+    2 	DeepMedic: Konstantinos Kamnitsas, Christian Ledig, Virginia F.J. Newcombe, Joanna P. Simpson, Andrew D. Kane, David K. Menon, Daniel Rueckert, and Ben Glocker, “Efficient Multi-Scale 3D CNN with Fully Connected CRF for Accurate Brain Lesion Segmentation”, Medical Image Analysis, 2016.
+   
+    3	Dense V-Networks: E. Gibson et al., "Automatic Multi-Organ Segmentation on  Abdominal CT With Dense V-Networks," in IEEE Transactions on Medical Imaging, vol. 37, no. 8, pp. 1822-1834, Aug. 2018.
+    
+    4	V-Net: F. Milletari, N. Navab and S. Ahmadi, "V-Net: Fully Convolutional Neural  Networks for Volumetric Medical Image Segmentation," 2016 Fourth International Conference on 3D Vision (3DV), Stanford, CA, 2016, pp. 565-571.
+
+For more information on U-Net, read the following article:
+
+U-Net:
+Convolutional Networks for Biomedical Image Segmentation
+
+Learn More    https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/
+
+
+Learning to See as Humans Do
+
+In medical applications, image segmentation is a fundamental process in most systems that support:
+
+https://import.cdn.thinkific.com/962431/multimedia_imports/b600tkiisyqhvj4obb8o-use-20for-20thinkific-june-13-2024-15-07/assets/medical%20imaging.jpg
+
+    Medical diagnosis
+    Surgical planning
+    Treatment planning
+
+MRI scan
+
+https://import.cdn.thinkific.com/962431/multimedia_imports/b600tkiisyqhvj4obb8o-use-20for-20thinkific-june-13-2024-15-07/assets/medical%20imaging%20program.jpg
+
+Artificial intelligence can support radiologists and pathologists as they use medical imaging to diagnose a wide variety of conditions. ... Multiple studies have indicated that AI tools can perform just as well, if not better, than human clinicians at identifying features in images quickly and precisely.
+
+
+
+There are more than 10000 DICOM files in CHAOS. Each of these files was labelled manually by team members to construct ground truth images. All labelled images were annotated by  three different radiologists. Four different metrics are used for evaluation. To learn more about CHAOS visit their website below.
+grand-challenge.orggrand-challenge.org
+CHAOS - Grand Challenge
+CHAOS - Grand Challenge
+CHAOS challenge aims the segmentation of abdominal organs (liver, kidneys and spleen) from CT and MRI data. CHAOS was held in The IEEE International Symposium on Biomedical Imaging (ISBI) on April 11, 2019, Venice, ITALY. The results of the challenge were published: https://chaos.grand-challenge.org/Results_CHAOS/ Also detailed analyses of these results have been published in the challenge article.
+Read more grand-challenge.org
+
+
+
+
+Performance of Segmentation Methods
+
+Metrics
+
+It is a very common mistake to use only one metric to evaluate segmentation performance. (DICE is the most popular single metric.) Combination of multiple metrics guarantees a reliable comparison of segmentations. Therefore, in CHAOS there are four metrics:
+
+    1
+
+    Sørensen–Dice coefficient (DICE): Provides information about the overlapping parts of segmented and reference volumes in mm3. (Takes value 1 for a perfect segmentation)
+    2
+
+    Relative absolute volume difference (RAVD): Also provides information about the differences  between volumes of segmented and reference organs, but values the differences more than overlap (0% for a perfect segmentation).
+    3
+
+    Average symmetric surface distance (ASSD): Determines the average difference between the  surface of the segmented object and the reference in 3D. (0 mm for a perfect segmentation).
+    4
+
+    Maximum symmetric surface distance (MSSD) or Hausdorff distance: Determines the maximum difference between the surface of the segmented object and the reference in 3D. MSSD is very  important for surgical operations as it determines the maximum margin of error (0 mm for a perfect segmentation).
+
+
+
+
+Problems with Current Deep Learning Models
+
+One DL training session = the annual energy consumption of 126 Danish homes. DL models suffer from the “curse of dimensionality” problem.  Statistical learning theory demonstrates that the generalization error (e) is calculated by dividing the degrees of freedom (d) of the search space by the numbers of training sample (n): e = d/2n . If the neurons approximately are 1011 in the brain and human needs to solve the classification problems using only a few hundred learning samples (n = 102), the generalization error would become huge, at least 10^11/10^2 = 10^9
+
+
+
+
+
+Deep Learning for Medical Image Segmentation
+Deep Learning for Medical Image Segmentation
+Deep Learning for Medical Image Segmentation
+
+
+

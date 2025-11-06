@@ -1,0 +1,120 @@
+If we define intelligence as the ability to achieve complex goals, then learning is the ability to achieve more complex goals today than we could yesterday. In this course, you will begin to work with the fundamentals of Deep Machine Learning, using algorithms inspired by the human brain and strategies inspired by human learning to achieve our most complex goals by harnessing the power of parallel computing.
+
+First, let’s start with some definitions…
+
+
+
+==========
+Artificial INtelligence 
+
+Artificial Intelligence (AI) is a broad field of study focused on using computers to do things that require human-level intelligence. It’s been around since the 1950’s, playing games like tic-tac-toe and checkers, and inspiring scary sci-fi movies, but it was limited in practical applications.
+
+
+
+==========
+Machine Learning
+
+Will Ramey defines Machine Learning (ML) as "an approach to AI that uses statistics techniques to construct a model from observed data. It generally relies on human-defined classifiers or “feature extractors” that can be as simple as a linear regression or a slightly more complicated “Bag of Words” analysis that made email SPAM filters possible, which was really handy in the late 1980’s when lots of email started showing up in your inbox." (Reference below).
+
+
+
+==========
+Deep Learning
+
+Will Ramey follows up his description of ML with a definition of Deep Learning (DL). "Then we invented smartphones, webcams, social media services and all kinds of sensors that generate huge mountains of “big data” and the new challenge of understanding and extracting insights from the data. Deep Learning is a ML technique that automates the creation of feature extractors using large amounts of data to train complex “deep neural networks (DNNs)”. DNNs are capable of achieving human-level accuracy for many tasks, but require tremendous computational power to train. A few years ago, researches started applying DNNs in a variety of areas and reporting amazing results." (Reference below)
+
+
+Additional Reading 
+
+https://www.forbes.com/sites/nvidia/2019/02/28/from-deep-learning-to-data-science-everything-you-need-to-know/
+
+
+
+
+=================
+From Deep Learning To Data Science: Everything You Need To Know
+NVIDIA
+
+ByWill Ramey,
+
+Brand Contributor.
+for NVIDIABRANDVOICE | Paid Program
+Feb 28, 2019, 06:19pm ESTFeb 28, 2019, 06:19pm EST
+
+Many people in the tech world now have a solid understanding of AI. Others are just getting started and asking questions like: What are the differences between deep learning and machine learning? How are they different, and how can they benefit organizations?
+
+Enterprises and their leaders who are looking to get started should first get familiar with the fundamentals of deep learning and the corresponding terminology, as well as understand the current challenges to AI adoption and how to address them. In this article, I’ll aim to provide a definitive overview of the topic, along with links to several resources that you may find useful.
+
+What’s the difference between data analytics, machine learning, and deep learning?
+
+Let’s start with defining the term “data science.” Data science is a broad field that covers everything related to data cleansing, preparation and analysis. This involves statistics, mathematics, programming, and creative problem-solving to extract information and insights from data. When GPU acceleration is used to improve the performance of data science workflows, we call this “accelerated data science.”
+
+In contrast, data analytics, machine learning, and deep learning are widely used approaches to solving problems in the field of data science.
+Accelerated data science
+How data analytics, machine learning, and deep learning fit in the larger picture of data science.
+NVIDIA
+
+Data analytics has been around for quite some time, and is used to examine data sets in order to draw conclusions about the information they contain using correlation, statistical modelling and other methods.
+
+Machine learning uses statistics techniques to construct a model from observed data. It generally relies on human-defined classifiers or “feature extractors” that can be as simple as a linear regression, or the slightly more complicated “Bag of Words” analysis technique that made email SPAM filters possible back in the late 1980’s.
+
+Then we invented smartphones, webcams, social media services, and all kinds of sensors that generate huge mountains of data. This brought on the new challenge of identifying the many features in the data— and the correlations between them that actually matter. That’s where deep learning comes in.
+
+Deep learning is a machine learning technique that automates the creation of these “feature extractors” through a process called “feature engineering,” which uses large amounts of data to train complex “deep neural networks” (DNN). DNNs are capable of achieving human-level accuracy for many tasks, but require tremendous computational power to train.
+Deep Learning and Beyond - how AI, deep learning, machine learning, and analytics fit.
+Deep Learning and Beyond - how AI, deep learning, machine learning, and analytics fit.
+NVIDIA
+
+How businesses are leveraging accelerated data science
+
+Many companies, organizations, and even governments are realizing that accelerated data science can help them be more effective and more efficient. For example, the healthcare industry benefits from accelerated data science in many ways, including:
+
+    Better prediction of disease drivers with genomic medicine
+    Improved health outcomes through analysis of electronic medical records
+    Predictively determine the best treatment for a wide range of health conditions
+
+Another example is the energy and utilities industry, where benefits of accelerated data science include:
+
+    Optimized energy distribution in smart grids
+    Reduced outages with predictive maintenance
+
+Across industries, enterprises can use accelerated data science to analyze customer data to improve product development, monitor IT systems and physical facilities for anomalies and threats, and develop customer business intelligence reports for business decision makers.
+
+Challenges businesses face when first adopting deep learning
+
+There are a few challenges that organizations and researchers may encounter when adopting deep learning.
+
+    Getting used to a brand-new computing model. Most data scientists, developers and researchers don’t have a lot of experience working with it yet, and to apply deep learning effectively you need to learn how to approach problems a little differently… from a more data-centric perspective.
+    Rapidly evolving algorithms. Deep learning algorithms continue to improve (and very quickly), so keeping up with all the latest advances that may benefit your work can require significant time & effort.
+    Training deep neural networks requires tremendous compute power. So, you need to plan your projects to take advantage of high performance computing platforms that can process large amounts of data quickly.
+
+Don’t worry: I also have solutions. Watch my free webinar recording to learn more about the tools and resources businesses use to overcome these challenges when adopting deep learning, along with additional information on things like:
+
+    More examples of accelerated data science and how your organization can benefit
+    How deep neural networks are trained, optimized and deployed in applications,
+    Recommendations to help you get started using deep learning in your own applications.
+    Resources for you and your team to stay knowledgeable and access the most relevant tools
+
+How do I stay informed on everything I need to know about deep learning?
+
+Beyond the free webinar, I also recommend attending the GPU Technology Conference on March 17-21, 2019 in San Jose, California. With over 600 sessions and nearly 10,000 developers, researchers and data scientists attending, you can see the amazing work being done with AI across industries, meet the experts leading the AI revolution, and learn how to apply the technologies you see to your own projects.
+
+Key speakers are coming from Google, Amazon, Microsoft, IBM, Facebook, Uber, BMW, several leading universities and national labs, to name a few. You can save 25% on registration with my personal code, NVWRAMEY.
+
+Resources:
+
+    Watch the free, on-demand webinar with the full presentation here.
+    Save 25% on registering for the GPU Technology Conference with my personal code NVWRAMEY.
+    Learn more about deep learning education through the Deep Learning Institute.
+    See how AI and deep learning can power change in every industry across the globe.
+
+Editorial Standards
+Reprints & Permissions
+Will Ramey
+
+ByWill Ramey
+
+BRANDVOICE | Paid Program
+Senior Director of Developer Programs and the Deep Learning Institute at NVIDIA. Will Ramey is director of developer marketing at NVIDIA. Prior to joining NVIDIA in 2003, Ramey managed an independent game studio and developed advanced technology for the entertainment industry as a product manager and software engineer. Ramey holds a Bachelor of Arts in computer science from Willamette University and completed the Japan Studies Program at Tokyo International University.
+
+=================

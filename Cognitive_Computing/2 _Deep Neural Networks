@@ -1,0 +1,54 @@
+Difference in Workflow for Machine Learning & Deep Learning
+
+Traditionally, in order to solve any problem with computing, you’d need to become or hire a domain expert in the problem you’re working to solve. You’d identify an ideal solution, and then translate that solution to steps in a language a computer could follow. An engineer would write an algorithm.
+
+The main difference in workflow which we’ll keep returning to throughout this course is the mindset of learning the algorithm from data. Now, we need a large dataset of inputs and their corresponding outputs. What does this mean?
+
+Let’s take a look at the example diagram of Deep/End-to-End learning below.
+https://import.cdn.thinkific.com/962431/multimedia_imports/b600tkiisyqhvj4obb8o-use-20for-20thinkific-june-13-2024-15-07/assets/neural%20network.png
+
+
+
+This is the first of many of these that you’ll see throughout this course. This is an abstracted view of a neural network. While there are endless conversations that we can have about how they work, we’re going to start by inspecting their inputs and outputs. To make this concrete, let’s imagine we are looking at the neural network that powers a self-driving car.
+
+Let’s start with the outputs, which are represented here on the right in orange. If you think about it, we only control three variables when we drive: gas pressure, brake pressure, and steering angle. On the left-hand side, you can see the inputs. What inputs inform our own driving? Our sensory data: how far we can see, our reading of the speed limit or stop sign, our kid throwing something in the back seat. Our self-driving cars are equipped with sensors that learn as much as they can about the conditions around the car.
+
+Our “data” consists of input and output data. Millions of miles driven in a car outfitted with sensors creates a dataset of sensory data and the corresponding output of the driver. Over time, enough of that data trains the neural network to respond appropriately to new data. This is a big deal.
+
+Computing Power
+
+We need a way for our artificial “brain” to observe lots of data within a practical amount of time. The other major factor in the onset of modern deep learning was processing power. If we’re effectively training an artificial brain, let’s think about our own for a second. How many gigabytes of information do we observe in a given second? What’s the “frame rate” of life? What is the resolution of the human eye?
+
+While modern day AI is impressive, we humans process significantly more data in a second than an AI. One way machines can try to catch up to us humans is with higher computing power.
+
+Supplemental Reading
+
+If you are curious about how the human eye compares to a camera, check out the below article.
+Discovery Communications, LLCDiscovery Communications, LLC
+How Many Megapixels Is the Human Eye?
+How Many Megapixels Is the Human Eye?
+Find out how well a human eye compares to a cell phone camera.
+Read more Discovery Communications, LLC
+
+Deep Learning in the context of Artificial Intelligence
+
+Within AI, you have additional layers or machine learning, and brain-inspired learning. This is where neural networks come into play and within these neural networks lies deep learning.
+
+Connections to a neuron in the brain. xi, wi, f(·), and b are the activations, weights, non-linear function and bias, respectively. Input is xo, x1 and x2 and output is y in the 
+figure. 
+
+https://import.cdn.thinkific.com/962431/multimedia_imports/b600tkiisyqhvj4obb8o-use-20for-20thinkific-june-13-2024-15-07/assets/DL%20IN%20AI.png
+
+https://import.cdn.thinkific.com/962431/multimedia_imports/b600tkiisyqhvj4obb8o-use-20for-20thinkific-june-13-2024-15-07/assets/neuron%20functions.jpg
+
+
+
+Deep Learning
+
+One thing that separates Deep Learning from traditional machine learning is the depth and complexity of the networks that are used. For especially complicated tasks such as natural language understanding (used for translations, text generation, other) networks can have billions of parameters. The deep in deep learning refers to the many layers in a model that learn the important rules necessary for completing a task. These are often called hidden layers.
+
+If you want a deeper dive into convolutional neural networks, check out this additional article.
+
+A Survey of the Recent Architectures of Deep Convolutional Neural Networks 
+View Article =-= https://arxiv.org/ftp/arxiv/papers/1901/1901.06032.pdf
+
