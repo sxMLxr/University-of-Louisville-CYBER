@@ -1,0 +1,19 @@
+Differentiator				Symmetric Key Encryption				Asymmetric Key Encryption
+1. Symmetric Key vs Asymmetric key	Only one key (symmetric key) is used, and the same key is used to encrypt and decrypt the message.	Two different cryptographic keys (asymmetric keys), called the public and the private keys, are used for encryption and decryption.
+
+
+
+2. Complexity and Speed of Execution	It’s a simple technique, and because of this, the encryption process can be carried out quickly.	It’s a much more complicated process than symmetric key encryption, and the process is slower.
+
+
+
+3. Length of Keys	The length of the keys used is typically 128 or 256 bits, based on the security requirement.	The length of the keys is much larger, e.g., the recommended RSA key size is 2048 bits or higher.
+
+
+
+4. Usage	It’s mostly used when large chunks of data need to be transferred.	It’s used in smaller transactions, primarily to authenticate and establish a secure communication channel prior to the actual data transfer.
+
+
+
+5. Security	The secret key is shared. Consequently, the risk of compromise is higher.	The private key is not shared, and the overall process is more secure as compared to symmetric encryption.
+Examples of Algorithms	Examples include RC4, AES, DES, 3DES, etc.	Examples include RSA, Diffie-Hellman, ECC, etc.

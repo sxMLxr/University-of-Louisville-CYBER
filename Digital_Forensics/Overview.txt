@@ -1,0 +1,31 @@
+
+
+Digital Forensics Module Description
+
+This module covers the fundamentals of digital forensics. Topics will include historical issues, key concepts, and trade tools and techniques. In addition, reporting methods will be discussed. The lab portion of the module will use various open-source tools.  
+
+Objectives
+
+1. Discuss data investigation types.
+
+2. List and describe the operating systems, disk, and file structures.
+
+3. Describe the methodologies used in host forensics.
+
+4. Discuss and use various digital forensic tools.
+
+5. Analyze and carve image files.
+
+6. Describe the steps in performing digital forensics, from the initial recognition of an incident to the steps of evidence gathering, preservation, and analysis to the completion of legal proceedings.
+
+7. Write and prepare forensic reports.
+
+To Dos
+
+1. Complete the Learning Module.
+
+2. Complete the Homework Assignments (#1 and #2).
+
+3. Complete the Survey.
+
+4. Complete the Final Module, Summative Assessment.

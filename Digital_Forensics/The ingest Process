@@ -1,0 +1,74 @@
+A forensic image contains all the files and relevant metadata. Making sense of it requires forensic tools that can ingest the information and catalogue it.
+
+Tools can catalogue information by:
+
+    Media Type
+
+    Device Type
+    
+    
+    The ingest tool applies a list of plugins and scripts to analyze a system image or device from start to finish. It uses specialized extraction modules to read, convert, and make available content that is otherwise hidden or difficult to access. Some plugins can even search directory indices and point to deleted files and folders which can be easily recovered.
+
+Most forensic tools are able to build dictionaries that contain a list of all text objects present on a medium. Dictionaries are searchable indices that can be used to find text-based content of interest. Ingest tools are able to extract text from a variety of sources and use a number of different encoding schemes to ensure that most possible strings are found.
+
+Every file and non-file object is hashed and the hashes are stored in a map. The list of file hashes can be compared against known digital contraband and illicit material for rapid identification of offending content. A list of offending files can be quickly brought to the investigator’s attention.
+
+Getting a Timeline of Events
+
+Some ingest tools are able to build a temporal record of file accessions and creations. This allows an examiner to see what was created, seen, and/or modified, and when. Databases can also be catalogued and sorted. On mobile devices, such databases include text messages, e-mails, and the text-based data of other mobile applications. 
+
+Analyzers can reconstruct search histories and most-recently-used lists (MRUs). It can provide a list of file accessions as seen by the operating system, not just file meta – stored in the Windows registry, as an example. It can also be maintained by individual applications in their configuration files.
+
+
+
+
+
+
+
+Carving
+When a file is deleted on a hard disk, an operating system doesn’t typically “scrub” the file’s contents – the space is simply labelled as available, and the OS deletes the file table entry.
+
+The original data remains on the drive until overwritten. A disk image can be scanned from beginning to end, while a carving tool searches for common file headers and potential matching content. Files are recovered by verifying headers and file space boundaries and assigning them an incremental filename. A database of headers and valid meta information is generally provided and can be augmented by the examiner. Solid state drives are a bit more of a challenge than conventional hard disks and data may not be recoverable.
+
+Identifying Disk Formats: Where is Everything?
+
+The carving process must begin with the identification of the target disk format and file structures (e.g., FAT16, FAT32, NTFS, ext3/4, HFS+, etc.). Once identified, the file table format must be scanned and rebuilt (if possible) by the carving tool.
+
+    File table formats include the Master File Table (MFT) in Windows 10
+
+    File Allocation Table (format for early versions of Windows, and a common removable media format)
+
+    File indices are rebuilt, allowing the location of deleted files (in some cases)
+
+Boot records are also analyzed for clues about the operating system and file contents. A couple boot records are:
+
+    Master Boot Record (MBR)
+
+    GUID Partition Table (GPT)
+    
+    == see images for table defintitoins ==
+    
+    
+
+
+Scanning for Known File Meta
+
+Once indexed content is found, it’s time to move beyond the visible file system boundaries. All files have a header, which contains information specific to that file type (e.g., JPEG). Carving goes through “empty” space on a drive image, searching for any matches to those headers. If found, the file boundary is inferred and a reference to the file is saved for later. Any file meta, such as file name, creation, modification, or accession dates are missing – these are only kept by the file system index.
+
+Carved files are further processed to extract relevant content even if meta information is missing for that file. The list of carved files are stored in the catalogue. Hashes are compared in case they match known hashes for illicit content. Carving utilities can also carve for known plaintext (e.g., known binary combination in the byte stream) to find.
+
+
+
+
+Fragmented Files
+
+Hard disks and other storage media do not necessarily store everything linearly. Often, files may be fragmented in various pieces along the medium. This is okay, that’s what file tables and indices are designed to allow!
+
+
+Carving contiguous files (everything in a row) is easy – check the header, extract and check content, and verify the end of file and save. Carving fragmented files is problematic – we have no file index to reference! Carving non-contiguous files means doing a proximity analysis of nearby clusters, as well as seeing if the file size of the target file is possibly known. If file size is known (perhaps written into file meta or EXIF), one discontinuity can be subtracted from the file space and the file can be recovered.  Multiple discontinuities require methodical and often manual recovery methods, and are very time intensive.
+
+
+Solid State Drive Concerns
+
+Solid state drives have significantly higher throughput and seek times than conventional drives. However, they store things differently to prevent wear issues. SSDs also write better when NAND flash cells are initialized to their “initial” state. To preserve write performance, file deletion events must be tracked and referred to a cleanup engine to reinitialize those now-unused flash memory cells. This process is called TRIM – it requires support from the SSD hardware and from the operating system, and is a form of garbage collection. Upon file deletion, a record of the deletion is kept by the OS. Every few days, or when requested manually, the drive checks the deletion list and reinitializes the affected cells in the background, transparent to the user. This destroys data that can be recovered by carving! TRIM is implemented not just on desktop/laptops, but also mobile devices and smartphones. If you can’t carve it, it might have been TRIMed! Recovering evidence in a timely manner and preserving its state is critical to avoid loss of data due to the TRIM process.
+

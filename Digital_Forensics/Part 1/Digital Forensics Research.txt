@@ -1,0 +1,41 @@
+Digital Forensics is basically, examining artifacts from a digital device. Artifacts can include images, videos, emails, SMSs (text messages), documents, deleted files, and more.
+
+The Digital Forensics Research Workshop (DFRWS) consists of several organizations bringing about a set of standards to the field.  DFRWS defines the six phases of the digital forensic process. Click on each phase for more information.
+
+==Identification
+	the first stage indentifies potential sources of evidence as well as the key custonians and location of data.
+
+==Preservation
+	The process of preserving any electronically stored information ESI.  This includes imaging technologies documentation and chain of custody to ensure an accurate and acceptable preservation of the evidence.
+
+
+==Collection
+	involves collecting devices and data based on approved methods
+
+==Examination
+	An indepth systemic search of the evidence related to the case.
+
+==Analysis
+	Analysis aims to draw conclusions based on the evidence found during the examination.
+
+==Presentation
+	Report writing and presentation of results.
+	
+	
+
+
+Three types of data
+
+==Data in Use
+
+Active data currently being used - spreadsheets, Word documents, e
+	
+
+==Data in Flight
+
+Data that is actively moving from one device to another like in a network or to and from the cloud.
+
+
+==Data at rest
+
+Data at rest examinations involve data that is stored on a local machine. That local machine can be a computer, server, mobile device, IoT device, or even an automobile. It means data that is stored and not data that is actively moving from one device to another like in a network or to and from the cloud.

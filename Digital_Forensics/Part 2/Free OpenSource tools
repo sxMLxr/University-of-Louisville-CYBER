@@ -1,0 +1,123 @@
+Autopsy
+
+Autopsy is an open-source tool that provides for an in-depth analysis of most computer hard drive file systems. Autopsy is a GUI that runs on top of an application called Sleuth Kit. Here is a link to their websi
+
+https://www.autopsy.com/download/
+
+
+
+
+WinHex
+
+WinHex, although not open-source, will allow for viewing hexadecimal content without purchasing.  It is a hexadecimal editor.  This type of tool allows you to view and modify the contents of a file displayed in hexadecimal.  As you have learned in an earlier module, hexadecimal is a base 16 numbering system.  WinHex is used to view the contents of a file represented in this form.   
+
+
+https://x-ways.net/
+
+
+
+File Type	Header
+.jpg	FF D8 FF
+.docx	50 4B 03 04 14 00 06 00
+.wmv	30 26 B2 75 8E 66 CF 11
+.xlsx	50 4B 03 04 14 00 06 00
+.mpg	00 00 01 B3
+
+
+
+
+The Sleuth Kit (TSK)
+
+TSK, another open-source tool, is Linux-based and consists of command line digital forensic tools.  Autopsy is a GUI based application that runs on top of Sleuth Kit.   The International Journal of Scientific and Research Publications has provided a paper discussing the basics of TSK.
+
+
+https://www.sleuthkit.org/
+site notes:
+   Autopsy® is an easy to use, GUI-based program that allows you to efficiently analyze hard drives and smart phones. It has a plug-in architecture that allows you to find add-on modules or develop custom modules in Java or Python.
+   https://github.com/sleuthkit/autopsy
+
+   The Sleuth Kit® is a collection of command line tools and a C library that allows you to analyze disk images and recover files from them. It is used behind the scenes in Autopsy and many other open source and commercial forensics tools
+   
+
+
+Drive Sanitizers
+
+Contrary to other forms of the forensic sciences, in the digital forensics field, the examiner never examines the original drive or original device.   The examiner will create a forensic image of the device or drive and the examination will be completed using the forensic image, not the original device.  
+
+Prior to creating the forensic image, the examiner must sanitize a target drive.  This is done to prevent any contamination of the evidence.  There are a number of tools on the market available to sanitize a drive.  Active@ KillDisk is one such tool.
+
+
+With the KillDisk tool, “Wipe Disk” is one option.  The Wipe Disk option merely wipes data on the unused section of the drive, whereas Erase Disk, will sanitize the entire drive.
+
+Active@ KillDisk Wipe Disk
+
+
+
+US DoD 5220.22-M standard:
+
+    Pass 1: Writes a zero, followed by verification
+    Pass 2: Writes a one, followed by verification
+    Pass 3: Writes an arbitrary character, followed by verification
+
+NIST 800-88 standard:
+
+    Clear - Applied through the standard Read/Write commands to the storage device, generally rewriting a new value to the drive. However, it does not, address hidden or unaddressable areas.
+    Purge - Provides a more thorough level of sanitization and is used for more confidential data. Purge requires the removal of hidden drives: Host Protected Areas (HPA) or Device Configuration Overlays (DCO), if they're present. The Purge method is used the most today.
+    Destroy - Renders the device unusable.
+    
+    
+    FTK Imager
+
+FTK Imager, from AccessData, is not an open-source tool, but it is a free tool.  This tool is often used for two purposes, one, to perform a triage examination and two, to create a forensic image of a drive or device.
+    
+    
+
+
+EnCase
+
+ Encase is a suite of tools to recover artifacts from digital devices for digital forensics, security analysis, and e-discovery.
+
+https://www.opentext.com/products/cybersecurity-cloud
+
+
+
+
+Oxygen Forensic Detective
+
+Oxygen is an all-in-one mobile forensics tool to extract, decode, and analyze data. As well as mobile devices, Oxygen can retrieve data from IoT devices, device backups, UICC and media cards, drones, and cloud services.
+
+https://youtu.be/W6o_8fyCk5A
+
+
+
+AccessData FTK
+AccessData Forensic toolkit is another computer forensics tool. To visit their website, click the link below.
+https://accessdata.com/
+
+
+
+
+AXIOM is a premium forensic suite capable of computer forensics, mobile forensics, and cloud forensics, all in one tool! rensics.com/
+
+https://www.magnetfoMagnet AXIOM
+
+https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F273553602%3Fapp_id%3D122963&dntp=1&display_name=Vimeo&url=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F273553602%3Fautoplay%3D1&image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F705379208_1280&key=40cb30655a7f4a46adaaf18efb05db21&type=text%2Fhtml&schema=vimeo
+
+
+
+
+
+Cellebrite
+
+Cellebrite is an Israeli own mobile forensics company. It contains tools used to examined mobile phones, tablets, drones, cloud data, etc.
+
+
+
+
+
+
+GrayKey
+
+Graykey is the newcomer to the mobile forensic world. As GrayKey is the newest of these tools. It provides the capability of extracting evidence from encrypted mobile devices. GrayKey can bypass the security passcode, pass phrase, thumb print, and facial recognition on Apple mobile devices. The company has just released a version to bypass the security on Android devices as well. GrayKey is only available to law enforcement agencies. 
+
+https://youtu.be/RbAUPBjKg1o

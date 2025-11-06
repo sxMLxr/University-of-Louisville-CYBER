@@ -1,0 +1,53 @@
+Making a Perfect Copy
+
+An image is a bit-wise identical copy of a source data device. Images must be generated so that the original exhibit is preserved without any modifications. They allow for flexible forensic examination as they can be copied and altered without device limitations being in the way. An image must be verified to be true to its original by verifying an image hash, a one-way mathematical function that can verify integrity.
+
+Two image categories exist:
+
+    Physical image – extracted byte by byte from the host device
+    Logical image – a copy of data that is visible to a device or file system in its operating state – an incomplete copy of the storage medium
+    
+    
+    To ensure integrity of an image, write-blocking media is used to help prevent any changes to the image.
+    
+    
+    At the operating system level, devices can be mounted as read-only. The Windows system registry or Diskpart can be used to write-protect a device. To do so, you would set the selected volume to “attributes volume set readonly”. In Linux, /etc/fstab can be modified to set a device to read-only.
+    
+    Some physical media can be manually set to read-only. Full-sized SD cards have a slider that prevents writing. Legacy disk media also had write-protect tabs that can be engaged or added. Some forensics-focused disk interfaces are designed to only allow read operations
+    
+    
+    
+    
+Cryptographic hash can provide proof of image integrity.
+
+
+
+
+Bypass passwords 
+
+Overwritign password hash files in WINDOWS and LINUX
+This is generally not necessary on desktop/laptop computers as the data is unaffected by these login passwords. This is only if booting the host operating system is needed. For Windows you will use Windows SAM hive and for Linux use /etc/passwd.
+
+Extracting Encrypted Passwords
+
+Requires sophisticated products OR maintaining RAM contents on seizure to extract encryption keys that are memory-resident
+
+Device Level Exploits to bypass Encryption Keys and Access Blockage
+
+Especially relevant in smartphones that have a PIN, password or pattern lock
+
+
+
+
+Defeating Password Hashes
+
+Passwords are typically stored as hashes. This prevents recovery of the password. In weaker hashing implementations, two totally different inputs can result in the same hash (rare). To exploit weaker implementations (NTLM-95, MD5, etc.), the entire combination space that the hash can represent is loaded into memory for certain input sizes. The table is then searched for the password hash that was recovered in the system
+
+A resultant input-output combination is found that matches that hash – may not be the original password! (Hashes are a one-to-many function.) That found collision input will work when put into the computer to log in. It generates the same hash as the unknown, original password.
+
+
+
+
+
+
+

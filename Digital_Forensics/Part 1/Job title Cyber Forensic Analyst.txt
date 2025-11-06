@@ -1,0 +1,45 @@
+A company is looking for a Cyber Forensics Analyst with strong hands-on knowledge of host-based forensics to join our Cybersecurity Intelligence & Response team. As a Cyber Forensics Analyst with this team, you will be focused on defending Company's global networks through threat hunting, tactical analysis of ongoing attacks by criminal and nation state actors, as well as supporting corporate forensic investigations and eDiscovery support requests. In this role you will frequently perform in-depth forensic analysis of compromised hosts for intrusions and support forensic investigations for the Security, Insider Risk, Ethics, and Legal organizations. Supporting incidents and investigations will require you to “think like an adversary” as both an external actor and an insider risk. You will be expected to provide oral and well written reports of the analysis performed, methodologies used, and results discovered to coworkers, management, and customers. You will also need to be able to correlate data from numerous sources to reconstruct an event, this can include things like big data analytics, and log analysis.
+
+ 
+
+PRIMARY RESPONSIBILITIES:
+
+    Examines and performs comprehensive technical analysis of computer-related evidence and information stored on devices during the course of digital investigations and litigation support requests.
+    Conducts offsite forensic collections of digital evidence using best practices and approved software and hardware (travel required).
+    Provides skilled technical guidance and assistance to staff personnel involved in the investigation and litigation process to ensure precautions are taken to prevent spoliation of evidence.
+    Serves as technical consultant and provide as-needed training in data recovery, forensic examinations, and other related techniques.
+    Provides operational and administrative support to the Digital Forensics Laboratory in configuring hardware and software and managing inventories.
+    Ensures evidence is stored and archived in a manner consistent to maintain preservation and protection of data and evidence. Ensure all hardware and software is verified and validated in accordance with established guidelines and the Federal Rules of Evidence.
+    Provides oral and written communication to staff personnel concerning findings of fact, results of examination(s), and legal declarations, and testify in court as to the procedures and methodology used to recover and identify relevant evidence.
+    Examines and performs comprehensive technical analysis of computer-related evidence and information stored on a device(s) during the course of an investigation or litigation. 
+
+ 
+
+BASIC QUALIFICATIONS:
+
+    4-8 years of progressive technical experience that demonstrates relevant skills in digital forensic investigations. Additional years of relevant experience will be considered in lieu of a degree.
+    Must have experience apply investigative and litigation support principles and methodologies.
+    Must be able to work independently and within a team environment.
+    In-depth experience with file system forensics
+    In-depth experience with registry analysis
+    In-depth experience with Internet history analysis
+    In-depth experience with timeline analysis
+    Experience with forensic media imaging
+    In-depth experience with email analysis
+    Demonstrated experience with forensics tools beyond the classroom, to include EnCase, FTK, Axiom, Blacklight, and others
+    Strong documentation and written communication skills with technical report writing experience
+    US citizenship and ability to obtain SECRET clearance is required 
+
+ 
+
+PREFERRED QUALIFICATIONS:
+
+    Understanding of behavioral based threat models, including ATT&CK, Cyber Kill Chain, Diamond Model, PICERL etc.
+    Industry standard certification(s) such as: CFCE, EnCE, ACE, GIAC, DoD, GCFE, GCFA, GCIH
+    Understanding of stenography and encryption detection and analysis
+    Understanding of managing complex large data set analysis
+    In-depth experience with signature and hash analysis
+    Forensic tool and script development
+    Programming experience
+    Law enforcement investigation experience and understanding of search and seizure
+    Requires BS and 4 – 8 years of prior relevant experience or Masters with 2 – 6 years of prior relevant experience.

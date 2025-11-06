@@ -1,0 +1,15 @@
+The Homework Assignment will test your knowledge of the Learning Module and prepare you for the Final Module Assessment.
+
+To begin your lab, open https://cyberpve.cecsresearch.org:8006/#v1:0:=qemu%2F1269:4:::::::  and enter your user name and password as assigned to you. Enter this information manually. You will be using the Windows Virtual Machine with credentials at the right side of your screen once you click on your lab under 'notes.'
+
+    Locate the image created in FTK Imager called "2020JimmyWilson.E01". 
+    Use Autopsy to examine the image. Again, follow along with the tutorial located within the course content.
+    Perform screen captures along the way. Paste the captures into a Word document and upload the document using the assignment link above.
+
+You can use the activity in Part 2 to check your answers.
+
+Proxmox Guide
+
+You can use this guide to enter and use Proxmox to complete your labs.
+
+Proxmox Guide
