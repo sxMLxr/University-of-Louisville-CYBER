@@ -1,0 +1,5 @@
+https://medium.com/analytics-vidhya/building-a-simple-chatbot-in-python-using-nltk-7c8c8215ac6e
+
+https://www.kaggle.com/code/yassineghouzam/introduction-to-cnn-keras-0-997-top-6
+
+https://youtu.be/v9NrSOSQvCw
