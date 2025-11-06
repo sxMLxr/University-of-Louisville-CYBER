@@ -1,0 +1,65 @@
+Measured Service:
+
+Resource-usage is monitored and automatically controlled and optimized. The organization provides transparency for both itself and the customer of the utilized service
+
+
+Elastic Cloud Characteristics
+ON demand self service
+Customers can provision computing capabilities.
+
+
+
+Broad Network Access:
+
+Resources are available over the network through standard mechanisms.
+
+
+
+Resource Pooling:
+
+The provider’s computing resources are pooled to serve multiple consumers using a multi-tenant model
+
+
+Rapid Elasticity:
+
+Capabilities can be rapidly and elastically provisioned, preferably automatically.
+
+
+
+Measured Service:
+
+Resource-usage is monitored and automatically controlled and optimized. The organization provides transparency for both itself and the customer of the utilized service.
+
+
+=============================================
+=============================================
+
+
+Cloud infrastructure as a service
+IAAS
+    The capability provided to the consumer is to rent processing, storage, networks, and other fundamental computing resources.
+        The consumer does not manage or control the underlying cloud infrastructure but has control over operating systems, storage, deployed applications, and possibly select networking components (e.g., firewalls, load balancers).
+        Examples: Amazon, RackSpace
+
+
+Cloud Platform as a service
+PAAS
+    The capability provided to the consumer is to deploy onto the cloud infrastructure consumer-created applications using programming languages and tools supported by the provider (e.g., Java, Python, .Net). 
+        The consumer only has control over the deployed applications and possibly application hosting environment configurations.
+        Examples: Google AppEngine, Microsoft Azure
+
+
+Cloud Software as a service
+SAAS
+    The capability provided to the consumer is to use the provider’s applications running on a cloud infrastructure and accessible from various client devices through a thin client interface such as a Web browser.
+        The consumer only has control over limited user-specific application configuration settings.
+        Example: SalesForce
+        
+        
+
+        
+        
+        
+=============================================
+=============================================
+
